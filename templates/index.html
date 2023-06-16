@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Product List</h1>
+
+    {% comment %} {% for product in products %}
+    <div>
+        <h3>{{ product.title }}</h3>
+        {% comment %} <p>Price: {{ product.variants[0].price }}</p> {% endcomment %}
+        {% comment %} <ul>
+            {% for image in product.images %}
+            <li><img src="{{ image.src }}" alt="{{ image.alt }}"></li>
+            {% endfor %}
+        </ul> {% endcomment %}
+    {% comment %} </div>
+    {% endfor %} {% endcomment %} 
+</body>
+</html>
